@@ -1,4 +1,4 @@
-const Morpion = require("../script");
+const Morpion = require("../morpion");
 
 describe("showBoard", () => {
   test("displays game board correctly", () => {

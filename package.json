@@ -2,9 +2,10 @@
     "name": "morpion",
     "version": "1.0.0",
     "description": "",
-    "main": "script.js",
+    "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "play": "node index.js"
     },
     "repository": {
         "type": "git",
