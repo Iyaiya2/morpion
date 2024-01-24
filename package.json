@@ -1,0 +1,26 @@
+{
+    "name": "morpion",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/OnyJ/morpion_educative_project.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/OnyJ/morpion_educative_project/issues"
+    },
+    "homepage": "https://github.com/OnyJ/morpion_educative_project#readme",
+    "devDependencies": {
+      "jest": "^29.7.0"
+    },
+    "dependencies": {
+      "prompt-sync": "^4.2.0"
+    }
+  }
+  
