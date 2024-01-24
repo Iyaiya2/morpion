@@ -46,7 +46,7 @@ describe("entering horizontal winning combinations creates a victory", () => {
 describe("entering vertical winning combinations creates a victory", () => {
   test("when first column wins", () => {
     const m = new Morpion();
-    m.cells = ["X", "O", "O", "X", "X", "O", "X", "O", "X"];
+    m.cells = ["X", "O", "X", "X", "X", "O", "X", "O", "X"];
     console.log = jest.fn();
     m.checkVictory("X");
     expect(console.log).toHaveBeenCalledWith("Joueur X gagne !");
@@ -54,7 +54,7 @@ describe("entering vertical winning combinations creates a victory", () => {
 
   test("when second column wins", () => {
     const m = new Morpion();
-    m.cells = ["O", "X", "X", "O", "X", "O", "O", "X", "X"];
+    m.cells = ["O", "X", "X", "X", "X", "O", "O", "X", "X"];
     console.log = jest.fn();
     m.checkVictory("X");
     expect(console.log).toHaveBeenCalledWith("Joueur X gagne !");
@@ -62,7 +62,7 @@ describe("entering vertical winning combinations creates a victory", () => {
 
   test("when third column wins", () => {
     const m = new Morpion();
-    m.cells = ["O", "O", "X", "X", "O", "X", "X", "X", "O"];
+    m.cells = ["O", "X", "X", "X", "O", "X", "O", "X", "X"];
     console.log = jest.fn();
     m.checkVictory("X");
     expect(console.log).toHaveBeenCalledWith("Joueur X gagne !");
@@ -76,6 +76,7 @@ describe("entering diagonal winning combinations creates a victory", () => {
     console.log = jest.fn();
     m.checkVictory("X");
     expect(console.log).toHaveBeenCalledWith("Joueur X gagne !");
+    
   });
 
   test("when right-to-left diagonal wins", () => {
